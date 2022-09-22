@@ -228,4 +228,72 @@ contacto */
   height: 100px;
   text-decoration: underline;
 }
+/* 
+@media screen (max-width 768px){
+.padre {  
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.10fr 1.8fr 1.2fr 1.4fr 1.4fr 0.20fr;
+  grid-template-areas:
+    "header header"
+    "bienvenida bienvenida"
+    "socios socios"
+    "impuestos contabilidad"
+    "gestion auditoria"
+    "footer footer";
+    }
+}
 
+@media screen (max-width 420px){
+.padre {  
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.10fr 1.8fr 1.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.20fr;
+  grid-template-areas:
+    "header"
+    "bienvenida"
+    "socios"
+    "impuestos"
+    "contabilidad"
+    "gestion"
+    "auditoria"
+    "footer";
+      }
+}
+
+@media screen (max-width 768px){
+.madre{  
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40px 250px 140px 250px 40px;
+  grid-template-areas:
+    "header header"
+    "nosotros nosotros2"
+    "oportunidades oportunidades"
+    "contacto contacto"
+    "footer footer";
+     }
+}
+
+@media screen (max-width 420px){
+  .madre{  
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 125px 125px 140px 250px 20px;
+    grid-template-areas:
+      "header"
+      "nosotros"
+      "nosotros2"
+      "oportunidades"
+      "contacto"
+      "footer";
+    }
+  } */
