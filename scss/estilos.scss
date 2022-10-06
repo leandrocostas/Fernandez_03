@@ -1,0 +1,313 @@
+/* 
+inicio */
+.padre {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.10fr 1.8fr 1.2fr 1.4fr 1.4fr 0.20fr;
+    grid-template-areas:
+        "header header"
+        "bienvenida bienvenida"
+        "socios socios"
+        "impuestos contabilidad"
+        "gestion auditoria"
+        "footer footer";
+}
+
+#footer-lean {
+    height: 100%;
+}
+
+.footer-lean {
+    height: 50%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.bienvenida {
+    grid-area: bienvenida;
+    background-image: url(../images/ciudad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .socios {
+        grid-area: socios;
+    }
+}
+
+
+.impuestos {
+    grid-area: impuestos;
+    background-image: url(../images/impuestos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 70%;
+
+    .impuestos:hover {
+        opacity: 100%;
+    }
+}
+
+.contabilidad {
+    grid-area: contabilidad;
+    background-image: url(../images/taxes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 70%;
+
+    .contabilidad:hover {
+        opacity: 100%;
+    }
+}
+
+
+.gestion {
+    grid-area: gestion;
+    background-image: url(../images/gestion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 70%;
+
+    .gestion:hover {
+        opacity: 100%;
+    }
+}
+
+.auditoria {
+    grid-area: auditoria;
+    background-image: url(../images/auditoria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 70%;
+    width: 100%;
+
+    .auditoria:hover {
+        opacity: 100%;
+    }
+}
+
+
+.footer {
+    grid-area: footer;
+
+    .logoempresa {
+        height: 90px;
+        margin-right: 20px;
+    }
+}
+
+.titulo {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-left: 20px;
+
+
+    .redes {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        justify-content: space-around;
+
+
+        li {
+            font-size: 20px;
+
+
+            .logo_facebook {
+                height: 40px;
+            }
+        }
+    }
+}
+
+.titulos_servicios {
+    color: white;
+    font-size: 5rem;
+    padding: 50px;
+    border-bottom: solid 4px white;
+}
+
+.clientes {
+    color: white;
+    background-color: rgb(8, 8, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    .clientes_imagenes {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* 
+  contacto */
+
+.madre {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 500px 280px 500px 80px;
+    grid-template-areas:
+        "header header"
+        "nosotros nosotros2"
+        "oportunidades oportunidades"
+        "contacto contacto"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+.nosotros2 {
+    grid-area: nosotros2;
+}
+
+.oportunidades {
+    grid-area: oportunidades;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.contadora {
+    height: 45%;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    border-radius: 60%;
+}
+
+.sobre_nosotros {
+    font-size: 3rem;
+    color: rgb(8, 8, 71);
+    margin-top: 45px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.sobre_nosotros_texto {
+    color: rgb(8, 8, 71);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.contadora_info {
+    color: rgb(8, 8, 71);
+}
+
+.oportunidades_titulo {
+    color: white;
+    background-color: rgb(8, 8, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: underline;
+}
+
+.oportunidades_texto {
+    color: rgb(8, 8, 71);
+    margin-top: 15px;
+}
+
+.contacto_titulo {
+    color: white;
+    background-color: rgb(8, 8, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: underline;
+}
+
+/* 
+  @media screen (max-width 768px){
+  .padre {  
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.10fr 1.8fr 1.2fr 1.4fr 1.4fr 0.20fr;
+    grid-template-areas:
+      "header header"
+      "bienvenida bienvenida"
+      "socios socios"
+      "impuestos contabilidad"
+      "gestion auditoria"
+      "footer footer";
+      }
+  }
+  
+  @media screen (max-width 420px){
+  .padre {  
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.10fr 1.8fr 1.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.20fr;
+    grid-template-areas:
+      "header"
+      "bienvenida"
+      "socios"
+      "impuestos"
+      "contabilidad"
+      "gestion"
+      "auditoria"
+      "footer";
+        }
+  }
+  
+  @media screen (max-width 768px){
+  .madre{  
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px 250px 140px 250px 40px;
+    grid-template-areas:
+      "header header"
+      "nosotros nosotros2"
+      "oportunidades oportunidades"
+      "contacto contacto"
+      "footer footer";
+       }
+  }
+  
+  @media screen (max-width 420px){
+    .madre{  
+      width: 100%;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 20px 125px 125px 140px 250px 20px;
+      grid-template-areas:
+        "header"
+        "nosotros"
+        "nosotros2"
+        "oportunidades"
+        "contacto"
+        "footer";
+      }
+    } */

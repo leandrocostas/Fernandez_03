@@ -1,6 +1,6 @@
 /* 
 inicio */
-.padre {  
+.padre {
   width: 100%;
   font-size: 2rem;
   text-align: center;
@@ -16,34 +16,44 @@ inicio */
     "footer footer";
 }
 
-.header { 
-  grid-area: header; 
+#footer-lean {
+  height: 100%;
 }
 
-.bienvenida { 
-  grid-area: bienvenida; 
+
+.footer-lean {
+  height: 50%;
+}
+
+
+.header {
+  grid-area: header;
+}
+
+.bienvenida {
+  grid-area: bienvenida;
   background-image: url(../images/ciudad.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.socios { 
-  grid-area: socios; 
+.socios {
+  grid-area: socios;
 }
 
-.impuestos { 
-  grid-area: impuestos; 
+.impuestos {
+  grid-area: impuestos;
   background-image: url(../images/impuestos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 70%;
 }
 
-.impuestos:hover{
+.impuestos:hover {
   opacity: 100%;
 }
 
-.contabilidad { 
+.contabilidad {
   grid-area: contabilidad;
   background-image: url(../images/taxes.jpg);
   background-size: cover;
@@ -51,45 +61,46 @@ inicio */
   opacity: 70%;
 }
 
-.contabilidad:hover{
+.contabilidad:hover {
   opacity: 100%;
 }
 
-.gestion { 
-  grid-area: gestion; 
+.gestion {
+  grid-area: gestion;
   background-image: url(../images/gestion.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   opacity: 70%;
 }
 
-.gestion:hover{
+.gestion:hover {
   opacity: 100%;
 }
 
-.auditoria { 
-  grid-area: auditoria; 
+.auditoria {
+  grid-area: auditoria;
   background-image: url(../images/auditoria.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   opacity: 70%;
+  width: 100%;
 }
 
-.auditoria:hover{
+.auditoria:hover {
   opacity: 100%;
 }
 
-.footer { 
-  grid-area: footer; 
+.footer {
+  grid-area: footer;
 }
 
-.logoempresa{
+.logoempresa {
   height: 90px;
   margin-right: 20px;
 
 }
 
-.titulo{
+.titulo {
   color: gray;
   display: flex;
   flex-direction: column;
@@ -98,49 +109,48 @@ inicio */
   padding-left: 20px;
 }
 
-.redes{
+.redes {
   display: flex;
   align-items: center;
   margin-top: 15px;
   justify-content: space-around;
 }
 
-li{
+li {
   font-size: 20px;
 }
 
-.logo_facebook{
+.logo_facebook {
   height: 40px;
 }
 
-.titulos_servicios{
+.titulos_servicios {
   color: white;
   font-size: 5rem;
   padding: 50px;
   border-bottom: solid 4px white;
 }
 
-.clientes{
-color: white;
-background-color: rgb(8, 8, 71);
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100px;
+.clientes {
+  color: white;
+  background-color: rgb(8, 8, 71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
 }
 
-.clientes_imagenes{
+.clientes_imagenes {
   display: flex;
   justify-content: space-around;
-  height: 13rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 /* 
 contacto */
 
-.madre{  
+.madre {
   width: 100%;
   font-size: 2rem;
   text-align: center;
@@ -155,38 +165,38 @@ contacto */
     "footer footer";
 }
 
-.header { 
-  grid-area: header; 
+.header {
+  grid-area: header;
 }
 
-.nosotros { 
-  grid-area: nosotros; 
+.nosotros {
+  grid-area: nosotros;
 }
 
-.nosotros2 { 
-  grid-area: nosotros2; 
+.nosotros2 {
+  grid-area: nosotros2;
 }
 
-.oportunidades { 
-  grid-area: oportunidades; 
+.oportunidades {
+  grid-area: oportunidades;
 }
 
-.contacto { 
-  grid-area: contacto; 
+.contacto {
+  grid-area: contacto;
 }
 
-.footer { 
-  grid-area: footer; 
+.footer {
+  grid-area: footer;
 }
 
-.contadora{
+.contadora {
   height: 45%;
   margin-top: 45px;
   margin-bottom: 20px;
   border-radius: 60%;
 }
 
-.sobre_nosotros{
+.sobre_nosotros {
   font-size: 3rem;
   color: rgb(8, 8, 71);
   margin-top: 45px;
@@ -194,17 +204,17 @@ contacto */
   text-decoration: underline;
 }
 
-.sobre_nosotros_texto{
+.sobre_nosotros_texto {
   color: rgb(8, 8, 71);
   font-size: 1rem;
   text-align: left;
 }
 
-.contadora_info{
-  color: rgb(8, 8, 71); 
+.contadora_info {
+  color: rgb(8, 8, 71);
 }
 
-.oportunidades_titulo{
+.oportunidades_titulo {
   color: white;
   background-color: rgb(8, 8, 71);
   display: flex;
@@ -214,12 +224,12 @@ contacto */
   text-decoration: underline;
 }
 
-.oportunidades_texto{
+.oportunidades_texto {
   color: rgb(8, 8, 71);
   margin-top: 15px;
 }
 
-.contacto_titulo{
+.contacto_titulo {
   color: white;
   background-color: rgb(8, 8, 71);
   display: flex;
@@ -228,6 +238,7 @@ contacto */
   height: 100px;
   text-decoration: underline;
 }
+
 /* 
 @media screen (max-width 768px){
 .padre {  
